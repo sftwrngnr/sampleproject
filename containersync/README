@@ -1,0 +1,8 @@
+This directory contains the server and client for cross container
+synchronization. The server accepts as a parameter, the number of containers to
+be synched. The client (which need to be installed with the container and run
+prior to whatever process(es) need to be executed simultaneously.
+
+The server will fork itself and wait for the semaphore to be updated to the
+correct number of containers, then set the "launch" semaphore and wait for the
+container semaphore to reach zero before exiting.

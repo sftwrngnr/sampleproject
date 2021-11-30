@@ -1,0 +1,14 @@
+ServerHostCfg:
+    host : <ServerHost>
+    port : 22
+    user    : <User>
+    password : 
+    sshcert :  <CertPath>
+    sshcertpass : <CertPass>
+    sshprivatekey : <PK_LOC>
+    sshpublickey : 
+    c_start_script : startcontainers.sh
+    c_stop_script : stopandrm.sh
+    c_script_loc : <ServerPath>
+    datadir : <DataDir>
+TestRunSettings:

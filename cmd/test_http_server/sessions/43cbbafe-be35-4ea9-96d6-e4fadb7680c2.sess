@@ -1,0 +1,128 @@
+{
+	"CurrentState": 3,
+	"ErrorMsg": "",
+	"LastAccess": "2020-02-05T14:23:11.813994515-07:00",
+	"TestDefinition": {
+		"TestInstance": "10.10.101.7",
+		"AddMonitoring": [
+			false,
+			false,
+			false
+		],
+		"TestDuration": 120,
+		"Tsuite1": {
+			"StressNG": {
+				"Tests": "\"cpu,memory,copyfile\"",
+				"PermuteMethod": 1,
+				"TestSeq": "1,2,3,4,5,6,7,8,9,10",
+				"StressOpts": "",
+				"TestSuffix": ""
+			},
+			"CP_MemRes": {
+				"MemLimit": "",
+				"MemRes": "",
+				"TotMemLimit": "",
+				"KernelMemLimit": "",
+				"Swappiness": "",
+				"DisableOOM": false,
+				"HeirArchAcct": false
+			},
+			"CPU_Mgmt": {
+				"SharesRatio": "",
+				"Quota": "",
+				"Period": "",
+				"RTRuntime": "",
+				"RTPeriod": "",
+				"CPUS": "",
+				"MemNodes": ""
+			},
+			"PID_Mgmt": {
+				"MaxPids": ""
+			},
+			"HugePg_Mgmt": {
+				"PageSize": "",
+				"Limit": ""
+			},
+			"NetId_Pri": {
+				"ClassId": "",
+				"LNClassId": ""
+			}
+		},
+		"Tsuite2": {
+			"StressNG": {
+				"Tests": "",
+				"PermuteMethod": 0,
+				"TestSeq": "",
+				"StressOpts": "",
+				"TestSuffix": ""
+			},
+			"CP_MemRes": {
+				"MemLimit": "",
+				"MemRes": "",
+				"TotMemLimit": "",
+				"KernelMemLimit": "",
+				"Swappiness": "",
+				"DisableOOM": false,
+				"HeirArchAcct": false
+			},
+			"CPU_Mgmt": {
+				"SharesRatio": "",
+				"Quota": "",
+				"Period": "",
+				"RTRuntime": "",
+				"RTPeriod": "",
+				"CPUS": "",
+				"MemNodes": ""
+			},
+			"PID_Mgmt": {
+				"MaxPids": ""
+			},
+			"HugePg_Mgmt": {
+				"PageSize": "",
+				"Limit": ""
+			},
+			"NetId_Pri": {
+				"ClassId": "",
+				"LNClassId": ""
+			}
+		},
+		"Tsuite3": {
+			"StressNG": {
+				"Tests": "",
+				"PermuteMethod": 0,
+				"TestSeq": "",
+				"StressOpts": "",
+				"TestSuffix": ""
+			},
+			"CP_MemRes": {
+				"MemLimit": "",
+				"MemRes": "",
+				"TotMemLimit": "",
+				"KernelMemLimit": "",
+				"Swappiness": "",
+				"DisableOOM": false,
+				"HeirArchAcct": false
+			},
+			"CPU_Mgmt": {
+				"SharesRatio": "",
+				"Quota": "",
+				"Period": "",
+				"RTRuntime": "",
+				"RTPeriod": "",
+				"CPUS": "",
+				"MemNodes": ""
+			},
+			"PID_Mgmt": {
+				"MaxPids": ""
+			},
+			"HugePg_Mgmt": {
+				"PageSize": "",
+				"Limit": ""
+			},
+			"NetId_Pri": {
+				"ClassId": "",
+				"LNClassId": ""
+			}
+		}
+	}
+}

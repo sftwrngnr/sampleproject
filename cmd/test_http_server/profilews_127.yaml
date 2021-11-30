@@ -1,0 +1,4 @@
+host : "127.0.0.1"
+port : 8080
+daemonproc : False
+webserverroot : /home/dhenderson/dans_src/sampleproject/perf_testing_experiment/http_server_pages

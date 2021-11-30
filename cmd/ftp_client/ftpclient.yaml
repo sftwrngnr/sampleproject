@@ -1,0 +1,10 @@
+host: 10.10.101.38
+port: 22
+user: csos
+sshcert: /home/ec2-user/.ssh/dhenders.pem
+sshcertpass: Byte1(Me
+sshprivatekey: /home/ec2-user/.ssh/id_rsa
+retrievedataloc: /home/csos/data
+targetdataloc: /home/ec2-user/work/perf-testing-data/ec2-huge/<RUN>/
+currun: 130
+incrun: true

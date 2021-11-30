@@ -1,0 +1,36 @@
+ServerHostCfg:
+    #host    : 10.10.203.148
+    host    : 10.10.102.5
+    port : 22
+    user    : ec2-user 
+    password : Byte1(Me
+    sshcert :   /home/ec2-user/.ssh/dans_nginx_container.pem
+    sshprivatekey : /home/ec2-user/.ssh/id_rsa
+    c_start_script : startcontainers.sh
+    c_stop_script : stopandrm.sh
+    c_script_loc : /home/ec2-user/work/perf_testing_experiment/stress_ng_testingscripts
+    datadir : /home/ec2-user/data
+TestRunSettings:
+    test_types : ["cpu", "io", "memory", "filesystem", "msg", "pipe"]
+    duration : 120
+    command_suffix : --maximize --metrics
+    #test_subtypes:
+    #    cpu : []
+    #    filesystem : []
+    #    io : []
+    #    memory : []
+    #    network : []
+    #    pipe : []
+    permute_settings: 
+        #permute_type: permute_all
+        permute_type : all_at_once
+        #permute_type : single_run_each
+        #permute_qty: 3
+    containers : [1,2,3,4,5,6,7,8,9,10]
+    #containers : [1,2]
+    duration : 120
+    ContainerSettings:
+        #MemoryLimits : ["6m","18m"]
+        CPULimits:
+            #CPUShares: [2,8]
+            #CPURTPeriod: [0]

@@ -1,0 +1,7 @@
+NOTE: With the new session saving logic, a 32 bit session key needs to exist.
+The session key needs to be generated, and persisted. You can do this by the 
+following:
+hexdump -n 16 -e '4/4 "%08X" 1 "\n"' /dev/random > wskey
+Then in the .bashrc file, add the following at the bottom of the file:
+export SESSION_KEY=`cat $HOME/wskey`
+and save the file.

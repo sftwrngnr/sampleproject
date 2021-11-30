@@ -1,0 +1,25 @@
+RunList:
+    - test_ctl: 
+      name    : test_ctl.go 
+      runprog : test_ctl.go
+      runpath : /home/ec2-user/work/perf_testing_experiment/cmd/test_ctl
+      listen : 127.0.0.1
+      srvtype : 1
+    - ftp_client: 
+      name    : ftpclient
+      runprog : ftpclient.go
+      runpath : /home/ec2-user/work/perf_testing_experiment/cmd/ftp_client
+      listen : 127.0.0.1
+      srvtype : 2
+    - csvandcommit: 
+      name    : CSVAndCommit
+      runprog : csvandcommit.go
+      runpath : /home/ec2-user/work/perf_testing_experiment/cmd/csvandcommit
+      listen : 127.0.0.1
+      srvtype : 3
+    - stressngcsv: 
+      name    : StressngCSVExport
+      runprog : csvexport.go
+      runpath : /home/ec2-user/work/perf_testing_experiment/cmd/csvexport_stressng
+      listen : 127.0.0.1
+      srvtype : 4

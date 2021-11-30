@@ -1,0 +1,58 @@
+ServerHostCfg:
+    host    : <Host>
+    user    : <User>
+    password : <Pass>
+    sshcert :   /home/ec2-user/.ssh/dans_nginx_container.pem
+    sshprivatekey : <PK>
+    c_start_script : startcontainers.sh
+    c_stop_script : stopandrm.sh
+    c_script_loc : <Location>
+TestRunSettings :
+    GlobalSettings :
+        duration : 120
+        permute_type : all_at_once
+        permute_qty : 0
+        container_start_delay : 10
+        gather_syscal_lat : true
+        node_exporter_data_on : true
+        ContainerName: stress_ng_testing
+        ContainerRepoLocation: <RepoLoc>
+    Testconfig :
+        Tests:
+            - test1:
+              testtypes : [ "cpu", "invalid_test"]
+              command_suffix : --maximize
+              permute_settings:
+                  permute_type: all_at_once
+              containers: [1,2]
+              ContainerSettings:
+                  MemoryLimits: 
+                  CPULimits:
+                      CPUShares: []
+                      CPURTPeriod: [0.010000,0.050000,1.000000]
+
+            - test2:
+              testtypes : [ "io", "filesystem"]
+              command_suffix : 
+              permute_settings:
+                  permute_type: single_run_each
+              containers: [1,2]
+              ContainerSettings:
+                  MemoryLimits: 
+                  CPULimits:
+                      CPUShares: 
+                      CPURTPeriod:
+                          
+            - test3:
+              testtypes : [ "memory", "pipe", "msg", "copyfile"]
+              command_suffix : 
+              permute_settings:
+                  permute_type: permute_all
+                  permute_qty: 3
+              containers: [1,2]
+              ContainerSettings:
+                  MemoryLimits: 
+                  CPULimits:
+                      CPUShares: []
+                      CPURTPeriod: [0,1] 
+

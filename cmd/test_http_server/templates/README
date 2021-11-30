@@ -1,0 +1,11 @@
+This run was executed on <RUN_DATE>.
+Server: <INSTANCE_NAME>. 
+This test run utilized the stress_ng stress test utility. 
+This series of tests were run using the "<TEST_PERMUTE_TYPE>" setting of the test
+fixture. For this run, there were <NUM_TESTS_EXECUTED> tests run 
+(<TESTS_EXECUTED>), the run was executed with the following 
+test sequence: <TEST_SEQ>
+
+|
+|
+<TESTRUNSETTINGS>
